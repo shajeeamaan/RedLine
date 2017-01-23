@@ -1,0 +1,183 @@
+body{
+	background-color: black;
+	background-image: url(images/homebackground.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+		}
+		
+h3{
+	font-size: 20px;
+	color: blue;
+	}
+
+	h4{
+	font-size: 15px;
+	color: blue;
+	}
+
+
+#wrapper{
+	width: 1100px;
+	padding: 0 10px;
+	margin: 0 auto;
+	background: transparent;
+	}
+
+#header{
+	position: relative;
+	background: transparent;
+	
+	}
+	
+#header .center{
+	height:100px;
+	background:	transparent;
+	}
+/* ----  COMPANY NAME --------------- */
+#company-name{
+	float:left;
+	font-size:40px;
+	line-height: 100px;
+	text-align: center;
+	width:370px;
+	margin-left: -200px;
+	}
+
+/* ------------------------------  MENU  ---- */
+
+
+#menu ul li {
+  right: -100px;
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  margin-top: 20px;
+  background: red; /* menu background */
+  transition: all 0.8s;
+  border-radius: 10px;
+  z-index: 1;
+ 
+}
+#menu ul li a{
+	text-decoration: none;
+	color: white;
+	}
+
+#menu ul li:hover {
+  margin-left: -10px;
+  color: #FF0040;
+  background: transparent;
+  opacity: 1;
+  font-size: 20px;
+  text-align: left;
+  text-shadow: 0px 5px 10px red;
+  
+}
+#menu ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 35px;
+  left: -100px;
+  width: 150px;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+
+}
+#menu ul li ul li {
+  background: red; /* dd list background*/
+  display: block;
+  color: black; /* dd list text*/
+  text-shadow: 0 -1px 0 #000; /* dd list text shadow*/
+  padding: 15px 20px;
+  line-height: 15px;
+  margin-top: 0px;
+
+}
+#menu ul li ul li a:hover {
+	
+	color: white;
+	opacity: 1;
+	
+}
+#menu ul li:hover ul {
+
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+  
+  }
+
+
+
+	
+	#f1_container {
+  position: relative;
+  width: 400px;
+  height: 230px; /* face back image size */
+  z-index: 2;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: 0px 0px 20px red;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  border-radius: 10px; 
+  border:3px transparent;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: black;/* face back font color */
+  text-align: center;
+  background-color: White; /* face back image background */
+}
+
+hr { 
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width:1px;
+	color:#999;
+	height:0.2px;
+	filter: alpha(opacity=50);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	-moz-opacity: 0.50;
+	opacity:0.2;
+} 
+
+#footer{
+	font-size:14px;
+	position:absolute;
+	margin-top:18px;
+	margin-left:1045px;
+	margin-bottom:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#999;
+	filter: alpha(opacity=50);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	-moz-opacity: 0.50;
+	opacity:0.5;
+}
+

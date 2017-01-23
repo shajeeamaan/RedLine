@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+}
+#container {
+  padding-left: 200px;   /* LC fullwidth */
+  padding-right: 190px;  /* RC fullwidth + CC padding */
+}
+#container .column {
+  position: relative;
+  float: left;
+}
+
+#left {
+  width:540px;
+  height:350;          /* LC width */
+  padding: 0 10px;       /* LC padding */
+  right: 240px;          /* LC fullwidth + CC padding */
+  margin-left:-100px;
+  padding-left:0px;
+  padding-top:25px;
+}
+#right {
+  width:450px;          /* RC width */
+  padding: 0 10px;       /* RC padding */
+  margin-left: -210px;  /* RC fullwidth + CC padding */
+}
+
+h2,p{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+
+p{
+	font-weight:lighter;
+}

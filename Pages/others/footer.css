@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+hr { 
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width:1px;
+	color:#999;
+	height:0.2px;
+	filter: alpha(opacity=50);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	-moz-opacity: 0.50;
+	opacity:0.2;
+} 
+
+#footer{
+	font-size:14px;
+	position:absolute;
+	margin-top:18px;
+	margin-left:890px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#999;
+	filter: alpha(opacity=50);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	-moz-opacity: 0.50;
+	opacity:0.5;
+}
